@@ -1,0 +1,576 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    /* overflow-x: hidden; */
+  }
+
+.container {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+}
+
+.hero {
+  text-align: left; /* Agar teks berada di kiri */
+  margin-top: 60px;
+  margin-left: 5%;
+  margin-right: 8%;
+}
+
+.hero h1 {
+  font-size: 50px; /* Membuat Nama Saya lebih besar */
+  margin-top: 0%;
+}
+
+.hero h2 {
+  font-size: 20px; /* Ukuran font untuk teks yang diketik */
+  color: #555; /* Warna untuk teks statis (Nama Saya) */
+  margin-bottom: 1.5rem;
+}
+
+.hero .typed-text {
+  color: #001a6e; /* Warna untuk teks yang diketik */
+}
+
+.hero p {
+  font-size: 1rem;
+  color: #666;
+  text-align: justify; /* Menyelaraskan teks di dalam elemen secara rata */
+  margin-right: 8rem;
+}
+
+.connect {
+    color: #001a6e !important; /* Warna teks */
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex; /* Supaya teks dan emoji sejajar */
+    align-items: center; /* Vertikal center */
+    gap: 10px; /* Jarak antara teks dan emoji */
+    margin-top: 20px;
+}
+
+/* Emoji tangan */
+.connect .hand {
+    font-size: 1.5rem; /* Ukuran emoji */
+    animation: bounce 1s infinite; /* Animasi memantul */
+}
+
+/* Animasi memantul */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(8px); /* Gerakan ke bawah */
+    }
+}
+
+.social-links {
+    display: flex; /* Menempatkan ikon secara horizontal */
+    gap: 50px; /* Jarak antar ikon */
+    margin-top: 15px;
+}
+
+.social-links a {
+    text-decoration: none; /* Menghapus underline pada link */
+    color: inherit; /* Warna ikon sesuai tema */
+}
+
+.social-links .social-icon {
+    margin-left: 20px;
+    font-size: 40px; /* Ukuran ikon */
+    transition: transform 0.3s ease; /* Animasi saat hover */
+}
+
+.social-links .social-icon:hover {
+    transform: scale(1.2); /* Perbesar ikon saat hover */
+    color: #001a6e; /* Contoh: Ubah warna ikon saat hover (LinkedIn biru) */
+}
+
+
+.social-links .download-btn {
+  margin-left: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #001a6e;
+}
+
+.social-links .contact-btn {
+    margin-left: -30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #001a6e; 
+    background-color: transparent; 
+    border: 2px solid #001a6e; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.social-links .contact-btn:hover {
+    background-color: #001a6e;
+    color: white;
+}
+  
+
+
+.container .pic img {
+  margin-top: 60px;
+  width: 400px; /* Ukuran gambar */
+  height: 400px; /* Ukuran gambar */
+  border-radius: 50%; /* Membuat gambar menjadi bulat */
+  object-fit: cover;
+  opacity: 0; /* Mulai dengan transparan */
+  animation: fadeInRight 2s forwards; /* Animasi untuk fade-in dan masuk dari kanan */
+}
+
+.pic2 img{
+    display: none;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30rem); /* Mulai dari sebelah kanan */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-5rem); /* Pindah ke posisi normal */
+  }
+}
+
+
+.skills-section {
+    margin-top: 40px;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 40px;
+  }
+  
+  .skills-section h2 {
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 25px;
+  }
+  
+  .card {
+    width: 300px;
+    height: 250px;
+    background-color: #f4f5f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures content is spaced out evenly */
+  }
+  
+  .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card-header .icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #efc4e7; /* Color for the icon circle */
+  }
+  
+  .card-header .icon.frameworks-icon {
+    background-color: #E3F0AF; /* Blue for Frameworks */
+  }
+  
+  .card-header .icon.skills-icon {
+    background-color: #C3ACD0; /* Orange for Skills */
+  }
+  
+  .card-header h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: auto; /* Push tags to the bottom of the card */
+  }
+  
+  .tag {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .tag:hover {
+    transform: scale(1.1);
+    border-color: #001a6e; /* Change border color on hover */
+  }  
+  
+
+/* Curved Divider */
+.curved-divider {
+    width: 100%;
+    height: 150px;
+    background: black;
+    border-bottom-left-radius: 50% 30%;
+    border-bottom-right-radius: 50% 30%;
+    position: relative;
+    margin-top: -10px;
+  }
+  
+  /* Optional shadow to enhance the curve */
+  .curved-divider::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+  }
+  
+  /* My Projects Section */
+  .project {
+    margin-top: 40px;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .project h2 {
+    font-size: 25px;
+    color: black;
+    margin-bottom: 40px;
+  }
+  
+  .pc-container {
+    display: flex;
+    color: white;
+    justify-content: center;
+    gap: 20px;
+    font-size: 12px;
+    flex-wrap: wrap;
+  }
+  
+  .pc {
+    max-height: 270px;
+    position: relative;
+    width: 270px;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .imgC {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  
+  .pi {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .pc:hover .overlay {
+    opacity: 1;
+  }
+  
+  .view-button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 10px;
+  }
+  
+  .view-button:hover {
+    background-color: #001a6e;
+  }
+  
+  .view-more-all {
+    display: inline-block;
+    margin-top: 50px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: #001a6e;
+  }
+  
+  .view-more-all:hover {
+    color: red;
+  }
+  
+
+  .animated-divider {
+    width: 100%; /* Lebar divider */
+    height: 8px; /* Ketebalan divider */
+    margin-top: 30px;
+    background: linear-gradient(90deg, rgb(229, 220, 250), #7ecffa, #001A6E); 
+    background-size: 200% 100%; /* Ukuran background lebih besar untuk animasi */
+    animation: slide 3s infinite; /* Menjalankan animasi */
+    border-radius: 2px; /* Membuat divider sedikit melengkung */
+  }
+  .animated-divider2 {
+    width: 100%; /* Lebar divider */
+    margin-bottom: -20px;
+    height: 8px; /* Ketebalan divider */
+    background: linear-gradient(90deg, rgb(229, 220, 250), #7ecffa, #001A6E); 
+    background-size: 200% 100%; /* Ukuran background lebih besar untuk animasi */
+    animation: slide 3s infinite; /* Menjalankan animasi */
+    border-radius: 2px; /* Membuat divider sedikit melengkung */
+  }
+
+  @keyframes slide {
+    0% {
+      background-position: 0% 50%; /* Awal animasi */
+    }
+    50% {
+      background-position: 100% 50%; /* Tengah animasi */
+    }
+    100% {
+      background-position: 0% 50%; /* Akhir animasi */
+    }
+  }
+  
+  /* get in touch section */
+  /* GetInTouch.css */
+.get-in-touch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .get-in-touch h2{
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .photo-container {
+    position: relative;
+    margin-bottom: 20px;
+    object-fit: cover;
+  }
+  
+  .profile-photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  }
+  
+  .profile-photo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .text-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .text-container p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+
+  .get-in-touch .download-btn {
+    padding: 8px 12px;
+    font-size: 12px;
+    color: #fff;
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .get-in-touch .download-btn:hover {
+    background-color: #001a6e;
+  }
+  
+  .emoji-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .emoji {
+    font-size: 24px;
+    animation: float 2s infinite ease-in-out;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  
+/* Media Query untuk layar kecil (misalnya mobile) */
+@media (max-width: 768px) {
+    
+        body, html {
+          height: auto; /* Menghindari halaman terlalu tinggi */
+          margin: 0;
+          padding: 0;
+        }
+      
+        .container {
+          flex-direction: column; /* Mengubah elemen menjadi kolom */
+          align-items: center; /* Menyelaraskan elemen ke tengah */
+          padding: 10px; /* Menambahkan sedikit padding agar lebih rapi */
+        }
+      
+        .hero {
+          text-align: center; /* Teks di tengah */
+          margin-bottom: 20px;
+          margin-left: 0;
+          margin-right: 0;
+        }
+      
+        .hero h1 {
+          font-size: 30px; /* Menyesuaikan ukuran font untuk layar kecil */
+          margin-top: 0;
+        }
+      
+        .hero h2 {
+          font-size: 18px;
+        }
+      
+        .hero p {
+          font-size: 14px;
+          margin-left: 5px;
+          margin-right: 5px;
+        }
+      
+        .pic img {
+          margin-left: 150px;
+          width: 200px !important; /* Ukuran gambar untuk layar kecil */
+          height: 200px !important;
+          order: 2; /* Menempatkan gambar setelah teks */
+          animation: none;
+          display: none;
+        }
+      
+        .social-links {
+          display: flex;
+          flex-wrap: wrap; /* Memungkinkan ikon untuk membungkus */
+          justify-content: center; /* Menyelaraskan ikon ke tengah */
+          gap: 20px; /* Menyesuaikan jarak antar ikon */
+          margin-top: 20px;
+        }
+      
+        .social-links .social-icon {
+          font-size: 30px; /* Menyesuaikan ukuran ikon */
+        }
+      
+        .social-links .download-btn,
+        .social-links .contact-btn {
+          width: 100%; /* Membuat tombol lebar penuh di perangkat mobile */
+          margin: 1px 0; 
+          font-size: 14px; /* Ukuran font lebih kecil */
+        }
+      
+        .hero p {
+          font-size: 14px; /* Menyesuaikan ukuran font untuk paragraf */
+          text-align: justify; /* Meratakan teks */
+        }
+      
+        
+        .connect {
+          text-align: center !important;
+          font-size: 1rem; /* Ukuran font untuk teks connect */
+        }
+      
+        /* Menyesuaikan ukuran emoji */
+        .connect .hand {
+          font-size: 1.2rem;
+        }
+
+        .social-links .pic2 img{
+            display: flex;
+            margin-top: 20px;
+            margin-left: 150px;
+            width: 200px; /* Ukuran gambar */
+            height: 200px; /* Ukuran gambar */
+            border-radius: 50%; /* Membuat gambar menjadi bulat */
+            object-fit: cover;
+            opacity: 0; 
+            animation: fadeInRight 2s forwards;
+        }
+        .skills-section {
+            flex-direction: column;
+            align-items: center;
+          }
+        
+          .card {
+            width: 100%;
+            max-width: 350px;
+          }
+}

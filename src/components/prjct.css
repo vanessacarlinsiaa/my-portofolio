@@ -1,0 +1,92 @@
+/* prjct.css */
+*{
+    margin: 0;
+}
+
+.projects-section {
+    margin: 0px;
+    text-align: center;
+  }
+  
+  .projects-section h2 {
+    font-size: 40px;
+    color: black;
+    margin-bottom: 20px;
+  }
+  
+  .project-cards-container {
+    display: flex;
+    color: white;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .project-card {
+    max-height: 850px;
+    position: relative;
+    width: 430px;
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  
+  .project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .project-card:hover .overlay {
+    opacity: 1;
+  }
+  
+  .view-button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .view-button:hover {
+    background-color: #001a6e;
+  }
+  
+  .project-description {
+    margin-top: 10px;
+    text-align: justify;
+    color: #333;
+    font-size: 12px !important;
+    font-weight: normal;
+  }
+  

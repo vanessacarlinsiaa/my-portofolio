@@ -1,0 +1,19 @@
+.footer {
+    margin-top: 20px;
+    background-color: black; /* Warna latar belakang */
+    color: white; /* Warna teks */
+    text-align: center; /* Pusatkan teks */
+    padding: 10px 0; /* Padding atas dan bawah */
+    font-size: 14px;
+    border-top: 1px solid black; /* Garis pemisah di atas */
+  }
+  
+  .footer .highlight {
+    font-weight: bold; /* Menonjolkan teks tertentu */
+    color: white; /* Warna teks yang disorot */
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
