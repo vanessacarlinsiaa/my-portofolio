@@ -1,0 +1,75 @@
+.experience-section {
+  text-align: center;
+  padding-top: 50px;
+}
+
+.experience-title {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.experience-quote {
+  font-style: italic;
+  font-size: 14px;
+  color: #555;
+}
+
+.experience-list {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+
+.experience-card {
+  max-width: 800px;
+  text-align: left;
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  animation: fadeUp 1s ease forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.experience-date {
+  color: #001a6e;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.experience-role {
+  font-weight: 700;
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.experience-desc {
+  color: #444;
+  margin: 10px 0;
+  font-size: 14.5px;
+}
+
+.experience-points {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.experience-points li {
+  margin-bottom: 8px;
+  list-style-type: disc;
+  line-height: 1.6;
+  font-size: 14px;
+}
