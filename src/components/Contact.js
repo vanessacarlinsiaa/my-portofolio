@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import "./contact.css";
 
 const Contact = () => {
-
-const [result, setResult] = React.useState("");
+  const [result, setResult] = useState(""); // wajib, biar build Vercel nggak error
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -14,7 +13,7 @@ const [result, setResult] = React.useState("");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
-      body: formData
+      body: formData,
     });
 
     const data = await response.json();
@@ -30,24 +29,45 @@ const [result, setResult] = React.useState("");
 
   return (
     <section className="contact">
-    <form onSubmit={onSubmit}>
-      <h1>Contact Me</h1>
-      <div className="input-box">
-            <h4>Name</h4>
-            <input type="text" className="field" placeholder="Enter your name" name="name" required/>
-      </div>
+      <form onSubmit={onSubmit}>
+        <h1>Contact Me</h1>
 
-      <div className="input-box">
-            <h4>Email</h4>
-            <input type="email" className="field" placeholder="Enter your email" name="email" required/>
-      </div>
-      
-      <div className="input-box">
-            <h4>Message</h4>
-            <textarea name="message" className="field mess" placeholder="Enter your message.." required/>
-      </div>
-      <button type="submit">Send Message</button>
-      {result && <p>{result}</p>}
+        <div className="input-box">
+          <h4>Name</h4>
+          <input
+            type="text"
+            className="field"
+            placeholder="Enter your name"
+            name="name"
+            required
+          />
+        </div>
+
+        <div className="input-box">
+          <h4>Email</h4>
+          <input
+            type="email"
+            className="field"
+            placeholder="Enter your email"
+            name="email"
+            required
+          />
+        </div>
+
+        <div className="input-box">
+          <h4>Message</h4>
+          <textarea
+            name="message"
+            className="field mess"
+            placeholder="Enter your message.."
+            required
+          />
+        </div>
+
+        <button type="submit">Send Message</button>
+
+        {/* Tampilkan feedback result */}
+        {result && <p style={{ marginTop: "10px", color: "green" }}>{result}</p>}
       </form>
     </section>
   );
