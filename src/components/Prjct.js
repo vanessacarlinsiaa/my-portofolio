@@ -1,7 +1,5 @@
-// Prjct.js
 import React from "react";
-import "./prjct.css"; // Import your CSS file here
-import { footer } from "motion/react-client";
+import "./prjct.css";
 
 const ProjectCard = ({ title, imageUrl, githubUrl, liveUrl, description }) => {
   return (
@@ -84,21 +82,21 @@ const Prjct = () => {
       <div className="project-cards-container">
         <ProjectCard
           title="Jockey Conference Center"
-          imageUrl="image/prj1.png" // Replace with actual image path
+          imageUrl="image/prj1.png"
           githubUrl="https://github.com/vanessacarlinsiaa/JCC-Project"
           liveUrl="https://jcc-project.vercel.app/"
           description="This is a Jockey Conference Center website, project individual from my University, which a project that I made by myself using HTML and CSS, then I publish to vercel app. This project is about a conference venue, total have 5 page."
         />
         <ProjectCard2
           title="Eatwell (design in figma)"
-          imageUrl="image/prj2.png" // Replace with actual image path
-          liveUrl="https://www.figma.com/proto/C6DYFgFP4h0npMxsrHHxg9/HCI-Aol?node-id=1-2&starting-point-node-id=1%3A2\"
+          imageUrl="image/prj2.png" 
+          liveUrl="https://www.figma.com/proto/MbilsTFfBUbArayJ9RXQ0y/Eatwell--AI-Project-?node-id=14-723&starting-point-node-id=13%3A272&t=DBfIBlCl4kMUkYlY-1"
           description="This is a Eatwell, Group-Project from my University. This mobile app design by my self. Which I makedesign using Figma. This design include 8 pages; The first slide page have 3 slide, Login page, Sign in Page, chat with assistant page, the receipe page and the Homepage. It all can seen in my project on Figma."
         />
         <ProjectCard2
           title="Calm (design in figma)"
           imageUrl="image/prj3.png"
-          liveUrl=" https://www.figma.com/design/ONrsEL0vnD2a0SBMxqR4Hu/MidExam_VanessaCarlinsiaTjong_2602052065?node-id=0-1&node-type=canvas&t=wOzav8Ue8jHojSEi-0"
+          liveUrl="https://www.figma.com/proto/ONrsEL0vnD2a0SBMxqR4Hu/MidExam_VanessaCarlinsiaTjong_2602052065?node-id=1-165&starting-point-node-id=1%3A234&scaling=scale-down-width&content-scaling=fixed&t=UeHOphFAhMRiVjDE-1"
           description="This is a Calm(Website for conseuling  with psychology or psychiatrist. This is project for mid exam and individual project from my University. The design of this project is made by myself, which I make using Figma. "
         />
         <ProjectCard

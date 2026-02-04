@@ -7,17 +7,7 @@ import { faGithub, faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-
 import { faCode, faCube, faTools } from "@fortawesome/free-solid-svg-icons";
 
 import "./about.css";
-/*
-const Divider = ({ icon }) => {
-  return (
-    <div className="divider">
-      <span className="line"></span>
-      {icon && <i className={`icon ${icon}`}></i>}
-      <span className="line"></span>
-    </div>
-  );
-};
-*/
+
 const PC = ({ title, imageUrl, githubUrl, liveUrl, liveUrl2 }) => {
   return (
     <div className="pc">
@@ -87,13 +77,13 @@ const About = () => {
         <p className="connect">
                     Connect with me <span className="hand">👉🏻</span>
           </p>
-          <a href="https://github.com/vanessacarlinsiaa" target="_blank">
+          <a href="https://github.com/vanessacarlinsiaa" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faGithub} />
           </a>
-          <a href="https://linkedin.com/in/vanessacarlinsia" target="_blank">
+          <a href="https://linkedin.com/in/vanessacarlinsia" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
-          <a href="https://instagram.com/vanessacarlinsia" target="_blank">
+          <a href="https://instagram.com/vanessacarlinsia" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faInstagram} />
           </a>
         </div>

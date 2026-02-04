@@ -47,6 +47,7 @@ const [result, setResult] = React.useState("");
             <textarea name="message" className="field mess" placeholder="Enter your message.." required/>
       </div>
       <button type="submit">Send Message</button>
+      {result && <p>{result}</p>}
       </form>
     </section>
   );
