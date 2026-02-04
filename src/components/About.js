@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 import { ReactTyped as Typed } from "react-typed";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faCode, faCube, faTools } from "@fortawesome/free-solid-svg-icons";
 
 import "./about.css";
@@ -79,51 +78,58 @@ const About = () => {
 
   return (
     <section>
-      <div className="container">
-        <div className="hero">
-          <h1>Vanessa Carlinsia</h1>
-          <h2>
-            I'm interested in{" "}
-            <Typed
-              className="typed-text"
-              strings={["Developer", "Designer", "Builder"]}
-              typeSpeed={100}
-              backSpeed={90}
-              loop
-            />
-          </h2>
-          <p>
-            I'm a creative personand I am a student from Bina Nusantara
-            University with Computer Science Major I'm passionate software
-            engineering with an experience on design website I enjoy combining
-            creativity and technical skills to craft visually appealing and
-            functional websites. I can also be responsible of my work. I always
-            to do the best in everything. I am also a person who never gives up,
-            if I fail I will try again until I succeed.
-          </p>
-          <p className="connect">
-            Connect with me <span className="hand">👇</span>
-          </p>
-          <div className="social-links">
-            <a
-              href="https://www.github.com/vanessacarlinsiaa"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faGithub} className="social-icon" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/vanessacarlinsia"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faLinkedin} className="social-icon" />
-            </a>
-            <button
+     {/* ===== NEW INTRO SECTION (SAFE ADD) ===== */}
+<div className="intro-wrapper">
+<div className="intro-card">
+  <img src="/image/p1.jpg" alt="Vanessa" />
+  <h3>VANESSA CARLINSIA TJONG</h3>
+  <p className="intro-role">SOFTWARE ENGINEER</p>
+  {/* FULL WIDTH FOOTER */}
+  <div className="intro-social-footer">
+  <p className="connect">
+              Connect with me <span className="hand">👉🏻</span>
+    </p>
+    <a href="https://github.com/vanessacarlinsiaa" target="_blank">
+      <FontAwesomeIcon icon={faGithub} />
+    </a>
+    <a href="https://linkedin.com/in/vanessacarlinsia" target="_blank">
+      <FontAwesomeIcon icon={faLinkedin} />
+    </a>
+    <a href="https://instagram.com/USERNAME_KAMU" target="_blank">
+      <FontAwesomeIcon icon={faInstagram} />
+    </a>
+  </div>
+</div>
+
+<div className="intro-text">
+  <h1 className="intro-greeting">
+    <Typed
+      strings={["Halo!", "Hello!", "안녕하세요!", "你好!"]}
+      typeSpeed={100}
+      backSpeed={90}
+      loop
+    />
+  </h1>
+
+  <h2 className="intro-interest">
+    I'm interested in{" "}
+    <span className="interest-typed">
+      <Typed
+        strings={["Developer", "Designer", "Builder"]}
+        typeSpeed={100}
+        backSpeed={90}
+        loop
+      />
+    </span>
+  </h2>
+
+
+    <div className="intro-buttons">
+      <button
               className="download-btn"
               onClick={() => window.open("/assets/CV.pdf", "_blank")}
             >
-              Download CV
+              My Resume
             </button>
             <button
               className="contact-btn"
@@ -133,15 +139,19 @@ const About = () => {
             >
               Design Portofolio
             </button>
-            <div className="pic2">
-              <img src="/image/p1.jpg" alt="vanes" />
-            </div>
-          </div>
-        </div>
-        <div className="pic">
-          <img src="/image/p1.jpg" alt="vanes" />
-        </div>
-      </div>
+    </div>
+
+    <p>
+    I'm a creative person and I am a student from Bina Nusantara
+            University with Computer Science Major I'm passionate software
+            engineering with an experience on design website I enjoy combining
+            creativity and technical skills to craft visually appealing and
+            functional websites. I can also be responsible of my work. I always
+            to do the best in everything. I am also a person who never gives up,
+            if I fail I will try again until I succeed.
+    </p>
+  </div>
+</div>
 
       <div className="skills-section">
         <h2>My Skills</h2>
