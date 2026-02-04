@@ -7,7 +7,7 @@ import { faGithub, faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-
 import { faCode, faCube, faTools } from "@fortawesome/free-solid-svg-icons";
 
 import "./about.css";
-
+/*
 const Divider = ({ icon }) => {
   return (
     <div className="divider">
@@ -17,7 +17,7 @@ const Divider = ({ icon }) => {
     </div>
   );
 };
-
+*/
 const PC = ({ title, imageUrl, githubUrl, liveUrl, liveUrl2 }) => {
   return (
     <div className="pc">
@@ -78,80 +78,78 @@ const About = () => {
 
   return (
     <section>
-     {/* ===== NEW INTRO SECTION (SAFE ADD) ===== */}
-<div className="intro-wrapper">
-<div className="intro-card">
-  <img src="/image/p1.jpg" alt="Vanessa" />
-  <h3>VANESSA CARLINSIA TJONG</h3>
-  <p className="intro-role">SOFTWARE ENGINEER</p>
-  {/* FULL WIDTH FOOTER */}
-  <div className="intro-social-footer">
-  <p className="connect">
-              Connect with me <span className="hand">👉🏻</span>
-    </p>
-    <a href="https://github.com/vanessacarlinsiaa" target="_blank">
-      <FontAwesomeIcon icon={faGithub} />
-    </a>
-    <a href="https://linkedin.com/in/vanessacarlinsia" target="_blank">
-      <FontAwesomeIcon icon={faLinkedin} />
-    </a>
-    <a href="https://instagram.com/USERNAME_KAMU" target="_blank">
-      <FontAwesomeIcon icon={faInstagram} />
-    </a>
-  </div>
-</div>
+      <div className="intro-wrapper">
+      <div className="intro-card">
+        <img src="/image/p1.jpg" alt="Vanessa" />
+        <h3>VANESSA CARLINSIA TJONG</h3>
+        <p className="intro-role">SOFTWARE ENGINEER</p>
+        <div className="intro-social-footer">
+        <p className="connect">
+                    Connect with me <span className="hand">👉🏻</span>
+          </p>
+          <a href="https://github.com/vanessacarlinsiaa" target="_blank">
+            <FontAwesomeIcon icon={faGithub} />
+          </a>
+          <a href="https://linkedin.com/in/vanessacarlinsia" target="_blank">
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+          <a href="https://instagram.com/vanessacarlinsia" target="_blank">
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+        </div>
+      </div>
 
-<div className="intro-text">
-  <h1 className="intro-greeting">
-    <Typed
-      strings={["Halo!", "Hello!", "안녕하세요!", "你好!"]}
-      typeSpeed={100}
-      backSpeed={90}
-      loop
-    />
-  </h1>
+      <div className="intro-text">
+        <h1 className="intro-greeting">
+          <Typed
+            strings={["Halo!", "Hello!", "안녕하세요!", "你好!"]}
+            typeSpeed={100}
+            backSpeed={90}
+            loop
+          />
+        </h1>
 
-  <h2 className="intro-interest">
-    I'm interested in{" "}
-    <span className="interest-typed">
-      <Typed
-        strings={["Developer", "Designer", "Builder"]}
-        typeSpeed={100}
-        backSpeed={90}
-        loop
-      />
-    </span>
-  </h2>
+        <h2 className="intro-interest">
+          I'm interested in{" "}
+          <span className="interest-typed">
+            <Typed
+              strings={["Developer", "Designer", "Builder"]}
+              typeSpeed={100}
+              backSpeed={90}
+              loop
+            />
+          </span>
+        </h2>
 
 
-    <div className="intro-buttons">
-      <button
-              className="download-btn"
-              onClick={() => window.open("/assets/CV.pdf", "_blank")}
-            >
-              My Resume
-            </button>
+          <div className="intro-buttons">
             <button
-              className="contact-btn"
-              onClick={() =>
-                window.open("/assets/DesignPortofolio.pdf", "_blank")
-              }
-            >
-              Design Portofolio
-            </button>
-    </div>
+                    className="download-btn"
+                    onClick={() => window.open("/assets/CV.pdf", "_blank")}
+                  >
+                    My Resume
+                  </button>
+                  <button
+                    className="contact-btn"
+                    onClick={() =>
+                      window.open("/assets/DesignPortofolio.pdf", "_blank")
+                    }
+                  >
+                    Design Portofolio
+                  </button>
+          </div>
 
-    <p>
-    I'm a creative person and I am a student from Bina Nusantara
-            University with Computer Science Major I'm passionate software
-            engineering with an experience on design website I enjoy combining
-            creativity and technical skills to craft visually appealing and
-            functional websites. I can also be responsible of my work. I always
-            to do the best in everything. I am also a person who never gives up,
-            if I fail I will try again until I succeed.
-    </p>
-  </div>
-</div>
+          <p>
+          I'm a creative person and I am a student from Bina Nusantara
+                  University with Computer Science Major I'm passionate software
+                  engineering with an experience on design website I enjoy combining
+                  creativity and technical skills to craft visually appealing and
+                  functional websites. I can also be responsible of my work. I always
+                  to do the best in everything. I am also a person who never gives up,
+                  if I fail I will try again until I succeed.
+          </p>
+        </div>
+      </div>
 
       <div className="skills-section">
         <h2>My Skills</h2>
